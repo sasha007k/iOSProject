@@ -28,7 +28,7 @@ class GetInfoViewController: UIViewController {
         request.returnsObjectsAsFaults = false
         let objects = try? context!.fetch(request)
         let obj = objects![(selectedCell?.row)!]
-        var str = "Date:   "
+        var str = "Date: "
         str += obj.date!
         str += "\nLitres: "
         str += obj.litres!
